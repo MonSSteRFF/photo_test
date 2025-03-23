@@ -1,9 +1,9 @@
 import React, { lazy } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import Layout from "./components/Layout.tsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout Page={lazy(() => import("./pages/Home"))} />,
